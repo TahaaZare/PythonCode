@@ -5,11 +5,12 @@ text = """101 COM    Computers
 189 ENG   English"""
 
 farsi_text = """در حال تماشای 13 سالگی برنامه کمدی هستید"""
-
-# pattern = '[ا-ی]{3,}' 
-# print(re.findall(pattern,farsi_text))
-
-
+farsi_text_2 = """21 فروردین 1401 """
+# pattern = '[ا-ی]{3,}'
+# pattern = r'\d{2,4}' 
+# pattern = 'فروردی?ن' 
+strings = 'لطفا با ایمیل من tahaazre@gmail.com تماس بگیرید.'
+print(re.findall(r'\w+@[A-Za-z]+\.[A-Za-z]+',strings))
 
 # pattern = '[A-Z]{3}'
 # pattern = '[A-Z]{4}'
